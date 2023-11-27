@@ -1,0 +1,37 @@
+'''
+Created on Nov 27, 2023
+
+@author: jer21551
+'''
+import random
+
+#Step 1: create your damn class
+class BankAccount:
+    def __init__(self):
+        print(", enter your starting balance: ")
+        
+    def deposit(self):
+        paid = int(input(", how much were you paid this week? "))
+        print("I will deposit that into your account.")
+        print(paid)
+        
+    def withdraw(self):
+        spent = int(input(", how much would you like to withdraw? "))
+        print("I will withdraw that amount from your account.")
+        print(spent)
+                
+    def get_balance(self):
+        print("__ your account balance is __")
+
+#Step 2: create your main function, runs the damn class
+def main():
+    my_bank = BankAccount()
+    my_bank.deposit()
+    my_bank.withdraw()
+    my_bank.get_balance()
+    
+    
+#Step 3: run the damn function with the class
+main()
+
+#2 loops, 1 if else (4 point), 2 boolean (4 point), 12 vocab, 1 function (10 point)
